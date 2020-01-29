@@ -58,3 +58,7 @@ gem 'kaminari'
 
 gem 'hirb', group: :development
 gem 'hirb-unicode', group: :development
+
+group :production do
+  gem 'pg', '>= 0.18', '< 2.0'
+end
