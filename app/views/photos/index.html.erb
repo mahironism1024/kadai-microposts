@@ -1,0 +1,11 @@
+<div class="text-center">
+    <h1>画像一覧</h1>
+</div>
+
+<% if @photos.any? %>
+    <% @photos.each do |photo| %>
+    　<div>
+        <img class="rounded img-fluid" src="<%= photo.image %>" alt="<%= photo.created_at %>">
+      </div>
+    <% end %>
+<% end %>

@@ -1,0 +1,14 @@
+<div class="text-center">
+    <h1>画像アップロード</h1>
+</div>
+
+<div class="row">
+    <div class="col-sm-3 offset-6">
+        <%= form_with(model: @photo, local: true) do |f| %>
+            <div class="form-group">
+            <%= f.file_field :image %>
+            </div>
+            <%= f.submit "アップロード", class:"btn btn-primary" %>
+        <% end %>
+    </div>
+</div>
